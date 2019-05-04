@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -t sousarka/react-docker -f Dockerfile.dev .
 script:
-  - docker run sousarka/react-docker npm test -- --coverage
+  - docker run sousarka/react-docker npm test -- --ci
